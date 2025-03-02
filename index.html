@@ -7,6 +7,7 @@
         <!-- entity management system -->
         <a-assets>
             <img src="./textures/floor-1024.jpg" id="floor">
+            <img src="./textures/floor-1024-NRM.jpg" alt="">
             <img id="sky" src="textures/clear-sunny-sky.jpg" alt="">
             <img src="./textures/miloA.jpeg" id="milo">
             <img src="./textures/milk.jpeg" id="milk">
@@ -178,19 +179,11 @@
       <!-- table mat -->
        <a-plane
        material="color:white;
-      src: #floor; repeat: 50 50
-      normal-map:#floor-NRM;  normal-texture-repeat: 5000 5000;"
+      src: #floor; repeat: 50 50;
+      normal-map: #floor-1024-NRM; normal-texture-repeat: 50 50;"
       rotation="-90 0 0"
-      scale=" 10 10 1"
-       ></a-plane>
-
-      <!-- Floor -->
-      <a-plane position="0 0 0"
-       material="color:white; 
-      src:#grass; repeat:1000 1000"
-       rotation="-90 0 0" 
-       ></a-plane>
-      
+      width="200" height="200"
+       ></a-plane>     
     </a-scene>
   </body>
 </html>
