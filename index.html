@@ -31,7 +31,39 @@
         <a-cylinder position="3 1.5 2.7" radius="0.05" height="3" color="#301A07"></a-cylinder>
 
 
-          
+        <!-- Walls enclosing the space -->
+      <!-- Front Wall -->
+      <a-plane position="0 1.5 3.5" 
+               rotation="0 0 0" 
+               width="8.5" 
+               height="3" 
+               material="color: #301A07; side: double">
+      </a-plane>
+
+      <!-- Back Wall -->
+      <a-plane position="0 1.5 -2.5" 
+               rotation="0 0 0" 
+               width="8.5" 
+               height="3" 
+               material="color: #301A07; side: double">
+      </a-plane>
+
+      <!-- Left Wall -->
+      <a-plane position="-4.25 1.5 0.5" 
+               rotation="0 -90 0" 
+               width="6" 
+               height="3" 
+               material="color: #301A07; side: double">
+      </a-plane>
+
+      <!-- Right Wall -->
+      <a-plane position="4.25 1.5 0.5" 
+               rotation="0 90 0" 
+               width="6" 
+               height="3" 
+               material="color: #301A07; side: double">
+      </a-plane>
+
       <!-- Table -->
 
        <!-- Table top -->
